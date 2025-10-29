@@ -1,0 +1,107 @@
+/* /app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0e0f17;
+  --card: #141626;
+  --muted: #9aa0b4;
+}
+
+html, body { height: 100%; }
+
+body {
+  @apply bg-[var(--bg)] text-white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container-wide { @apply max-w-7xl mx-auto px-4 md:px-8; }
+.card { @apply bg-[var(--card)] rounded-2xl shadow-soft border border-white/5; }
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 font-medium transition
+  duration-200 ease-out will-change-transform;
+  transform: translateZ(0);
+}
+.btn-primary { @apply btn bg-primary text-white shadow; }
+.btn-primary:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(124, 58, 237, 0.35);
+  filter: brightness(1.06);
+}
+.btn-primary:active { transform: translateY(0) scale(0.99); }
+
+.btn-ghost { @apply btn bg-white/10; }
+.btn-ghost:hover {
+  @apply bg-white/20;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(255,255,255,0.08);
+}
+.btn-ghost:active { transform: translateY(0); }
+
+/* New outline button for repo links */
+.btn-outline {
+  @apply btn border border-white/20 bg-transparent text-white;
+}
+.btn-outline:hover {
+  @apply bg-white/10;
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 10px 24px rgba(255,255,255,0.08);
+}
+.btn-outline:active { transform: translateY(0) scale(0.99); }
+
+.input, .textarea, .select {
+  @apply bg-black/30 border border-white/10 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary w-full;
+}
+/* ---- Video box styles ---- */
+.video-box { transition: transform 180ms ease, box-shadow 200ms ease; }
+.video-box:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(0,0,0,0.35); }
+
+.video-thumb::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.35) 100%);
+  pointer-events: none;
+}
+
+.play-badge {
+  position: absolute; inset: 0;
+  display: grid; place-items: center;
+  font-size: 32px; line-height: 1; color: white;
+  text-shadow: 0 6px 22px rgba(0,0,0,0.55);
+  opacity: 0.9; transition: transform 160ms ease, opacity 160ms ease;
+}
+.video-box:hover .play-badge { transform: scale(1.06); opacity: 1; }
+/* ---- Timeline styles ---- */
+.timeline {
+  /* the vertical spine is handled by Tailwind's border-l on the wrapper */
+}
+.timeline-item {
+  position: relative;
+  padding-left: 2rem; /* space for the dot */
+}
+.timeline-item .dot {
+  position: absolute;
+  top: 0.75rem; /* aligns with title line */
+  left: -0.375rem; /* centers over the border */
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+  background: theme(colors.primary);
+  box-shadow: 0 0 0 6px rgba(14,15,23,0.9); /* bg halo so dot pops over line */
+}
+.timeline-item .meta {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Experience hover */
+.exp-card {
+  transition: transform 180ms ease, box-shadow 220ms ease, background 200ms ease;
+}
+.exp-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  background: rgba(20,22,38,0.9);
+}
