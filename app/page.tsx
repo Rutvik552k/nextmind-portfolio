@@ -42,7 +42,7 @@ export default function Home() {
               Build with <span className="text-primary">AI</span>—Agents, RAG, and MCQ at scale.
             </h1>
             <p className="text-white/70 mt-4 max-w-2xl">
-              A focused portfolio with live background, refined hover effects, and clear project outcomes.
+              Welcome to Rutvik Savaliya's portfolio.
             </p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
