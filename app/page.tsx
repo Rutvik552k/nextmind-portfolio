@@ -71,7 +71,7 @@ export default function Home() {
           <ProjectWindow
             title="1. RAG BASED CHATGPT"
             body={`A GPT-driven assistant grounded on enterprise documents via vector retrieval and LangChain orchestration, raising domain precision by 22% and cutting end-to-end latency by 15%. A Streamlit interface enables real-time queries, uploads, and contextual visualization, and FAISS optimizes embedding search to sustain pilot-stage engagement gains of 18% while remaining production-deployable.`}
-            ctaHref="/products/rag"
+            ctaHref="http://18.221.253.206:8501"
             ctaLabel="Open Demo"
           />
           <ProjectWindow
