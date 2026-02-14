@@ -105,8 +105,8 @@ export default function Home() {
                    "Built an automated fine-tuning pipeline on AWS SageMaker using PyTorch to train Llama 3 70B with LoRA on 50k synthetic examples, then deployed via Docker and FastAPI to achieve sub-2.3-second latency for strategy generation while reducing token usage by 22% through advanced prompt engineering.",
                     "Integrated a reasoning LLM with GRPO reinforcement learning, improving correct tool selection for campaigns from 71% to 89%; the system now autonomously executes roughly 200 monthly A/B tests, driving a 15% average increase in lead conversion for users.",
                     "Achieved 90% strategy prediction accuracy validated by expert panels across 200 ICP segments, enabling fully autonomous multi-channel campaign execution that eliminates founder workload and replaces external marketing agency contracts with scalable, data-driven GTM execution."
- ]}
-            >
+                 ]}
+            />
           
           
           {/* CrowdDoing — Data Scientist */}
