@@ -101,20 +101,11 @@ export default function Home() {
             title = "Mid AI Engineer, Solulab"
             meta = "Nov 2025 - Jan 2026, Chicago, IL"
             bullets = {[
-              "Engineered a multi-agent system using LangChain and FastAPI, where specialized AI agents collaborate. This reduced planning time from weeks to hours and cut projected agency spend by 50-70% for early-stage startups based on pilot data,
-              while maintaining iterative campaign execution",
-              "Built an automated fine-tuning pipeline on AWS SageMaker using PyTorch, training Llama 3 70B with LoRA on 50k
-              synthetic examples.",
-              "Deployed the service using Docker and FastAPI, achieving under 2.3-second latency for strategy generation. Advanced
-              prompt engineering reduced token usage by 22%, and a BERT-based classifier verified a 92% relevance score for all
-              generated output against ICP requirements.",
-"Integrated a reasoning LLM with GRPO reinforcement learning, improving correct tool selection for campaigns from
-71% to 89%. The system now autonomously runs roughly 200 monthly A/B tests, demonstrating a 15% average increase
-in lead conversion for users.",
-"Achieved 90% strategy prediction accuracy validated by expert panels on 200 ICP segments. The assistant autonomously
-executes multi-channel campaigns, reducing founder workload and enabling scalable, data-driven GTM execution without
-requiring external marketing agency contracts or expertise"
-            ]}
+                   "Engineered a multi-agent orchestration system using LangChain and FastAPI where specialized AI agents collaborate on go-to-market strategy, reducing planning cycles from weeks to hours and cutting projected agency spend by 50-70% for early-stage startups based on pilot data.",
+                   "Built an automated fine-tuning pipeline on AWS SageMaker using PyTorch to train Llama 3 70B with LoRA on 50k synthetic examples, then deployed via Docker and FastAPI to achieve sub-2.3-second latency for strategy generation while reducing token usage by 22% through advanced prompt engineering.",
+                    "Integrated a reasoning LLM with GRPO reinforcement learning, improving correct tool selection for campaigns from 71% to 89%; the system now autonomously executes roughly 200 monthly A/B tests, driving a 15% average increase in lead conversion for users.",
+                    "Achieved 90% strategy prediction accuracy validated by expert panels across 200 ICP segments, enabling fully autonomous multi-channel campaign execution that eliminates founder workload and replaces external marketing agency contracts with scalable, data-driven GTM execution."
+ ]}
             >
           
           
@@ -157,18 +148,14 @@ requiring external marketing agency contracts or expertise"
 
           {/* Corange Lab — Sr. AI Engineer */}
           <ExperienceItem
-            title="Sr. AI Engineer · Corange Lab"
+            title="AI Engineer · Corange Lab"
             meta="Nov 2019 – Nov 2022 · Hybrid · Surat, India"
             bullets={[
-              "Founded and architected an end-to-end MCQ generation platform, scaling throughput to 5,000+ items/month at <5% error rate.",
-              "Designed, fine-tuned, and deployed custom LLMs from Hugging Face (instruction-tuned transformers) via supervised fine-tuning and domain-specific training, improving pedagogical alignment by 25% over base models.",
-              "Built and productionized an NLP-driven validation engine to auto-detect ambiguities and distractor gaps, reducing revision cycles by 40% and raising content integrity.",
-              "Engineered ingestion and chunking pipelines with PyMuPDF, TF-IDF, and heuristics to transform unstructured PDFs into structured datasets with >90% citation traceability.",
-              "Established observability with structured logging, per-run dashboards, and AWS CloudWatch to achieve 80% faster failure diagnostics and 99.9% uptime during peak seasons.",
-              "Drove cross-functional alignment by co-developing reusable MCQ templates with subject experts, ensuring pedagogical fidelity and achieving >95% adoption across internal production workflows.",
-              "Pioneered optimization of TF-IDF+MMR harvesting for key concepts, boosting idea coverage by 30% and elevating downstream benchmark recall, directly advancing research-backed question quality.",
-              "Implemented full-stack monitoring with Prometheus, Grafana, and CloudWatch, automating 15+ anomaly and drift alerts to reduce downtime by 60% and enabling proactive response to scaling bottlenecks.",
-              "Acted as the primary mentor and architect, onboarding junior engineers into scalable MLOps practices, reducing onboarding time by 35% and driving collective velocity across debugging and QA pipelines."
+              "Architected and deployed a high-availability chatbot platform on AWS EKS (Kubernetes), integrating FastAPI, React/TypeScript, API Gateway, and load balancers to reliably support 50,000+ daily active users with 99.8% uptime and sub-second latency.",
+              "Engineered the core conversational engine using custom orchestration and a RAG system; fine-tuned transformer models on historical interactions to boost response personalization accuracy and user satisfaction scores by 35%.",
+              "Designed and implemented a real-time response validation and semantic caching layer using Redis and NLP techniques, then automated CI/CD pipelines on AWS to enable 15+ daily deployments while cutting production incidents by 60%.",
+              "Built and productionized an end-to-end MLOps pipeline, from automated document ingestion via S3 to vector search retrieval, reducing debug time for conversational drift by 75% through comprehensive CloudWatch observability and monitoring."
+              
 
             ]}
           />
