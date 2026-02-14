@@ -96,10 +96,32 @@ export default function Home() {
       <section className="space-y-6" id="experience">
         <h2 className="text-3xl font-bold">Experience</h2>
         <div className="border-l border-white/15 timeline">
+          {/*Solu lab- mid level Ai engineer*/}
+          <ExperienceItem
+            title = "Mid AI Engineer, Solulab"
+            meta = "Nov 2025 - Jan 2026, Chicago, IL"
+            bullets = {[
+              "Engineered a multi-agent system using LangChain and FastAPI, where specialized AI agents collaborate. This reduced planning time from weeks to hours and cut projected agency spend by 50-70% for early-stage startups based on pilot data,
+              while maintaining iterative campaign execution",
+              "Built an automated fine-tuning pipeline on AWS SageMaker using PyTorch, training Llama 3 70B with LoRA on 50k
+              synthetic examples.",
+              "Deployed the service using Docker and FastAPI, achieving under 2.3-second latency for strategy generation. Advanced
+              prompt engineering reduced token usage by 22%, and a BERT-based classifier verified a 92% relevance score for all
+              generated output against ICP requirements.",
+"Integrated a reasoning LLM with GRPO reinforcement learning, improving correct tool selection for campaigns from
+71% to 89%. The system now autonomously runs roughly 200 monthly A/B tests, demonstrating a 15% average increase
+in lead conversion for users.",
+"Achieved 90% strategy prediction accuracy validated by expert panels on 200 ICP segments. The assistant autonomously
+executes multi-channel campaigns, reducing founder workload and enabling scalable, data-driven GTM execution without
+requiring external marketing agency contracts or expertise"
+            ]}
+            >
+          
+          
           {/* CrowdDoing — Data Scientist */}
           <ExperienceItem
             title="Data Scientist · CrowdDoing (Part-time)"
-            meta="Mar 2025 – Present · Remote · Chicago, IL"
+            meta="Mar 2025 – Nov 2025 · Remote · Chicago, IL"
             bullets={[
               "Led the collection, cleaning, and standardization of over 20,000 consumer reviews using Python (Pandas), ensuring high-quality data for analysis and process optimization.",
               "Applied advanced NLP tools (NLTK, RoBERTa, BERT) to analyze consumer sentiments, achieving a 10% improvement in classification accuracy and extracting insights for product innovation.",
