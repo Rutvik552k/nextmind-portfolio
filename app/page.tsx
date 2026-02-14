@@ -98,8 +98,8 @@ export default function Home() {
         <div className="border-l border-white/15 timeline">
           {/*Solu lab- mid level Ai engineer*/}
           <ExperienceItem
-            title = "Mid AI Engineer, Solulab"
-            meta = "Nov 2025 - Jan 2026, Chicago, IL"
+            title = "Mid AI Engineer · Solulab"
+            meta = "Nov 2025 - Jan 2026 · Chicago · IL"
             bullets = {[
                    "Engineered a multi-agent orchestration system using LangChain and FastAPI where specialized AI agents collaborate on go-to-market strategy, reducing planning cycles from weeks to hours and cutting projected agency spend by 50-70% for early-stage startups based on pilot data.",
                    "Built an automated fine-tuning pipeline on AWS SageMaker using PyTorch to train Llama 3 70B with LoRA on 50k synthetic examples, then deployed via Docker and FastAPI to achieve sub-2.3-second latency for strategy generation while reducing token usage by 22% through advanced prompt engineering.",
