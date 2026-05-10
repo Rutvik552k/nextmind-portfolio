@@ -1,32 +1,35 @@
-// /app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
+import { Syne, DM_Sans } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: "NextMind Inspired",
-  description: "AI Agency demo app (inspired UI)",
+  title: "Rutvik Savaliya — AI Engineer",
+  description:
+    "Mid-Level AI Engineer building agentic AI systems, multi-agent orchestration, and autonomous trading & marketing agents.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${syne.variable} ${dmSans.variable}`}>
       <body className="relative overflow-x-hidden">
-        {/* Fullscreen, looping background video */}
-        <video
-          className="fixed inset-0 w-full h-full object-cover z-[-2]"
-          src="/bg.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-        {/* Soft overlay to keep text readable */}
-        <div className="fixed inset-0 bg-[rgba(10,12,20,0.55)] backdrop-blur-[2px] z-[-1]" />
-
+        <ScrollProgress />
         <Navbar />
-        <main className="container-wide">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
